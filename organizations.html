@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Site</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+
+<body id="page" class="page__body">
+  <div class="site-container">
+    <header class="header header--product">
+    <div class="header__top header-top">
+        <div class="container header-top__container">
+            <a href="index.html" class="logo">
+                <picture>
+                  <source srcset="img/logo.webp" type="image/webp">
+                  <img src="img/logo.avif" alt="">
+                </picture>
+            </a>
+            <a class="header-top__catalog">
+                <div class="burger burger--catalog">
+                    <span class="burger__line"></span>
+                </div>
+                <span class="header-top__catalog-text">Каталог</span>
+            </a>
+            <form action="#" class="header-top__form header-form">
+                <button type="button" class="header-form__btn btn-reset"></button>
+                <label class="header-form__label">
+                    <input type="text" placeholder="Поиск" class="header-form__input input-reset">
+                </label>
+            </form>
+            <div class="header-top__links">
+                <a href="basket.html" class="header-top__link">
+                    <div class="header-top__icon">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#cart"></use>
+                        </svg>
+                    </div>
+                    <span class="header-top__counter">2</span>
+                </a>
+                <a href="account.html" class="header-top__link">
+                    <div class="header-top__icon">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#avatar"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom header-bottom">
+        <div class="container header-bottom__container">
+            <nav class="header-bottom__nav nav">
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Учебные пособия</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Интерактивное оборудование</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Спортивный инвентарь</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Металлическая мебель </a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Раздел</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Раздел</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="mobile-nav">
+	<form action="#" class="mobile-nav__form header-form">
+        <button type="button" class="header-form__btn btn-reset"></button>
+        <label class="header-form__label">
+            <input type="text" placeholder="Поиск" class="header-form__input input-reset">
+        </label>
+    </form>
+
+    <div class="mobile-nav__aside account-aside">
+        <div class="account-aside__items">
+            <a href="account.html" class="account-aside__item account-aside__item--active">
+                <div class="account-aside__text">OOO Название компании</div>
+                <svg class="account-aside__icon account-aside__icon--avatar">
+                    <use xlink:href="img/sprite.svg#account-avatar-active"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="account-aside__caption">Покупки</div>
+        <div class="account-aside__items">
+            <a href="my-orders.html" class="account-aside__item">
+                <div class="account-aside__text">Мои заказы</div>
+                <svg class="account-aside__icon">
+                    <use xlink:href="img/sprite.svg#orders"></use>
+                </svg>
+            </a>
+            <a href="purchase.html" class="account-aside__item">
+                <div class="account-aside__text">История покупок</div>
+                <svg class="account-aside__icon">
+                    <use xlink:href="img/sprite.svg#purchase"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="account-aside__caption">Управление</div>
+        <div class="account-aside__items">
+            <a href="organizations.html" class="account-aside__item">
+                <div class="account-aside__text">Мои организации</div>
+                <svg class="account-aside__icon">
+                    <use xlink:href="img/sprite.svg#box"></use>
+                </svg>
+            </a>
+            <a class="account-aside__item">
+                <div class="account-aside__text">Оставить обращение</div>
+                <svg class="account-aside__icon">
+                    <use xlink:href="img/sprite.svg#message"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="account-aside__caption">Товары</div>
+        <div class="account-aside__items">
+            <a href="basket.html" class="account-aside__item">
+                <div class="account-aside__text">Корзина</div>
+                <svg class="account-aside__icon">
+                    <use xlink:href="img/sprite.svg#cart"></use>
+                </svg>
+            </a>
+            <a href="viewed-products.html" class="account-aside__item">
+                <div class="account-aside__text">Просмотренные товары</div>
+                <svg class="account-aside__icon">
+                    <use xlink:href="img/sprite.svg#viewed"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <nav class="mobile-nav__nav nav">
+        <div class="nav__item">
+            <a href="#" class="nav__link">Учебные пособия</a>
+        </div>
+        <div class="nav__item">
+            <a href="#" class="nav__link">Интерактивное оборудование</a>
+        </div>
+        <div class="nav__item">
+            <a href="#" class="nav__link">Спортивный инвентарь</a>
+        </div>
+        <div class="nav__item">
+            <a href="#" class="nav__link">Металлическая мебель </a>
+        </div>
+        <div class="nav__item">
+            <a href="#" class="nav__link">Раздел</a>
+        </div>
+        <div class="nav__item">
+            <a href="#" class="nav__link">Раздел</a>
+        </div>
+    </nav>
+</div>
+</header>
+    <main class="main">
+        <section class="organizations">
+    <div class="container">
+        <div class="organizations__wrapper">
+            <aside class="organizations__aside account-aside">
+                <div class="account-aside__items">
+                    <a href="account.html" class="account-aside__item">
+                        <div class="account-aside__text">OOO Название компании</div>
+                        <svg class="account-aside__icon">
+                            <use xlink:href="img/sprite.svg#account-avatar"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="account-aside__caption">Покупки</div>
+                <div class="account-aside__items">
+                    <a href="my-orders.html" class="account-aside__item">
+                        <div class="account-aside__text">Мои заказы</div>
+                        <svg class="account-aside__icon">
+                            <use xlink:href="img/sprite.svg#orders"></use>
+                        </svg>
+                    </a>
+                    <a href="purchase.html" class="account-aside__item">
+                        <div class="account-aside__text">История покупок</div>
+                        <svg class="account-aside__icon">
+                            <use xlink:href="img/sprite.svg#purchase"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="account-aside__caption">Управление</div>
+                <div class="account-aside__items">
+                    <a class="account-aside__item account-aside__item--active">
+                        <div class="account-aside__text">Мои организации</div>
+                        <svg class="account-aside__icon">
+                            <use xlink:href="img/sprite.svg#box"></use>
+                        </svg>
+                    </a>
+                    <a id="btn4" class="account-aside__item">
+                        <div class="account-aside__text">Оставить обращение</div>
+                        <svg class="account-aside__icon">
+                            <use xlink:href="img/sprite.svg#message"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="account-aside__caption">Товары</div>
+                <div class="account-aside__items">
+                    <a href="basket.html" class="account-aside__item">
+                        <div class="account-aside__text">Корзина</div>
+                        <svg class="account-aside__icon">
+                            <use xlink:href="img/sprite.svg#cart"></use>
+                        </svg>
+                    </a>
+                    <a href="viewed-products.html" class="account-aside__item">
+                        <div class="account-aside__text">Просмотренные товары</div>
+                        <svg class="account-aside__icon">
+                            <use xlink:href="img/sprite.svg#viewed"></use>
+                        </svg>
+                    </a>
+                </div>
+            </aside>
+
+            <div class="organizations__content">
+                <h2 class="title organizations__title">Мои организации</h2>
+
+                <div class="organizations__list accordion-list list-reset">
+
+                    <div class="organizations__accordion accordion">
+                        <div class="accordion__visible flex" aria-expanded="true">
+                            <div class="accordion__open">
+                                <h3 class="subtitle accordion__title">ООО Вектор</h3>
+                                <div class="accordion__text">ИНН 52586661313</div>
+                            </div>
+                            <svg class="accordion__icon">
+                                <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                            </svg>
+                        </div>
+
+                        <div class="accordion__hidden">
+                            <div class="organizations__block">
+                                <div class="organizations__item">
+                                    <div class="organizations__caption">
+                                        Полное наименование организации
+                                    </div>
+                                    <div class="organizations__descr">
+                                        Общество с&nbsp;ограниченной ответственностью &laquo;Вектор&raquo;
+                                    </div>
+                                </div>
+                                <div class="organizations__item">
+                                    <div class="organizations__caption">
+                                        Юридический адрес
+                                    </div>
+                                    <address class="organizations__descr">
+                                        123456, г. Москва, ул. Пушкина, д.&nbsp;14
+                                    </address>
+                                </div>
+                                <div class="organizations__item">
+                                    <div class="organizations__caption">
+                                        ИНН
+                                    </div>
+                                    <div class="organizations__descr">
+                                        52586661313
+                                    </div>
+                                </div>
+                                <div class="organizations__item">
+                                    <div class="organizations__caption">
+                                        КПП
+                                    </div>
+                                    <div class="organizations__descr">
+                                        779101001
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="organizations__block">
+                                <div class="organizations__item">
+                                    <div class="organizations__caption">
+                                        БИК
+                                    </div>
+                                    <div class="organizations__descr">
+                                        044521234
+                                    </div>
+                                </div>
+                                <div class="organizations__item">
+                                    <div class="organizations__caption">
+                                        Р/С
+                                    </div>
+                                    <address class="organizations__descr">
+                                        40702810123450101230&nbsp;в Московский банк ПАО Сбербанк г. Москва
+                                    </address>
+                                </div>
+                                <div class="organizations__item">
+                                    <div class="organizations__caption">
+                                        К/С
+                                    </div>
+                                    <address class="organizations__descr">
+                                        40702810123450101230&nbsp;в Московский банк ПАО Сбербанк г. Москва
+                                    </address>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="organizations__accordion accordion">
+                        <div class="accordion__visible flex" aria-expanded="true">
+                            <div class="accordion__open">
+                                <h3 class="subtitle accordion__title">ООО Вектор 2</h3>
+                                <div class="accordion__text">ИНН 52586661313</div>
+                            </div>
+                            <svg class="accordion__icon">
+                                <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                            </svg>
+                        </div>
+
+                        <div class="accordion__hidden">
+                            <div class="organizations__block">
+                                <div class="organizations__item">
+                                    <div class="organizations__caption">
+                                        Полное наименование организации
+                                    </div>
+                                    <div class="organizations__descr">
+                                        Общество с&nbsp;ограниченной ответственностью &laquo;Вектор&raquo;
+                                    </div>
+                                </div>
+                                <div class="organizations__item">
+                                    <div class="organizations__caption">
+                                        Юридический адрес
+                                    </div>
+                                    <address class="organizations__descr">
+                                        123456, г. Москва, ул. Пушкина, д.&nbsp;14
+                                    </address>
+                                </div>
+                                <div class="organizations__item">
+                                    <div class="organizations__caption">
+                                        ИНН
+                                    </div>
+                                    <div class="organizations__descr">
+                                        52586661313
+                                    </div>
+                                </div>
+                                <div class="organizations__item">
+                                    <div class="organizations__caption">
+                                        КПП
+                                    </div>
+                                    <div class="organizations__descr">
+                                        779101001
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="organizations__block">
+                                <div class="organizations__item">
+                                    <div class="organizations__caption">
+                                        БИК
+                                    </div>
+                                    <div class="organizations__descr">
+                                        044521234
+                                    </div>
+                                </div>
+                                <div class="organizations__item">
+                                    <div class="organizations__caption">
+                                        Р/С
+                                    </div>
+                                    <address class="organizations__descr">
+                                        40702810123450101230&nbsp;в Московский банк ПАО Сбербанк г. Москва
+                                    </address>
+                                </div>
+                                <div class="organizations__item">
+                                    <div class="organizations__caption">
+                                        К/С
+                                    </div>
+                                    <address class="organizations__descr">
+                                        40702810123450101230&nbsp;в Московский банк ПАО Сбербанк г. Москва
+                                    </address>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <div class="popup request" id="request">
+    <div class="request__container">
+        <h2 class="title request__title">Оставить обращение</h2>
+        <div class="request__btns switch-btns">
+            <button class="switch-btn btn-login btn-reset">
+                Запросить звонок 
+            </button>
+            <button class="switch-btn switch-btn--active btn-registr btn-reset">
+                Форма обратной связи
+            </button>
+        </div>
+        <p class="request__descr">
+            Наш менеджер свяжется с&nbsp;Вами в&nbsp;течении 2&nbsp;рабочих дней
+        </p>
+        <form action="#" class="request__form registr-form">
+            <div class="request__wrap">
+                <div class="request__form-descr">Имя</div>
+                <input placeholder="Менделеев Дмитрий Иванович" type="text" 
+                class="request__input input-reset">
+            </div>
+            <div class="request__wrap">
+                <div class="request__form-descr">Телефон*</div>
+                <input placeholder="+7" type="tel" class="request__input input-reset">
+            </div>
+            <div class="request__wrap">
+                <div class="request__form-descr">Почта*</div>
+                <input placeholder="example@domain.ru" type="email" class="request__input input-reset">
+            </div>
+            <div class="request__wrap">
+                <div class="request__form-descr">Комментарий</div>
+                <textarea placeholder="Подробно опишите суть обращения" 
+                class="request__textarea input-reset"></textarea>
+            </div>
+
+            <div class="request__documents-block documents-block">
+                <div class="documents-block__left">
+                    <div class="documents-block__caption">
+                        Загрузка до&nbsp;5&nbsp;фото или видео файлов
+                    </div>
+                    <div class="documents-block__upload-files">
+                        <label for="file" class="documents-block__label">
+                            Нажмите, чтобы загрузить, либо перетащите фото сюда
+                        </label>
+                        <input id="file" type="file" class="documents-block__input visually-hidden">
+                        <div class="documents-block__files-info">
+                            Максимальный размер файла 500&nbsp;МБ
+                        </div>
+                    </div>
+                </div>
+                <div class="documents-block__right">
+                    <div class="documents-block__caption">Загруженные документы</div>
+                    <div class="documents-block__files">
+                        <div class="documents-block__file">
+                            <picture>
+                                <source data-srcset="img/clients-3.webp" type="image/webp">
+                                <img class="lazy" data-src="img/clients-3.avif" alt="">
+                            </picture>
+                            <button type="button" class="documents-block__delete btn-reset">
+                                <svg>
+                                  <use xlink:href="img/sprite.svg#delete"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="documents-block__file">
+                            <picture>
+                                <source data-srcset="img/file.webp" type="image/webp">
+                                <img class="lazy" data-src="img/file.avif" alt="">
+                            </picture>
+                            <button type="button" class="documents-block__delete btn-reset">
+                                <svg>
+                                  <use xlink:href="img/sprite.svg#delete"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="documents-block__file">
+                            <picture>
+                                <source data-srcset="img/clients-3.webp" type="image/webp">
+                                <img class="lazy" data-src="img/clients-3.avif" alt="">
+                            </picture>
+                            <button type="button" class="documents-block__delete btn-reset">
+                                <svg>
+                                  <use xlink:href="img/sprite.svg#delete"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="documents-block__file">
+                            <picture>
+                                <source data-srcset="img/file.webp" type="image/webp">
+                                <img class="lazy" data-src="img/file.avif" alt="">
+                            </picture>
+                            <button type="button" class="documents-block__delete btn-reset">
+                                <svg>
+                                  <use xlink:href="img/sprite.svg#delete"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="documents-block__file">
+                            <picture>
+                                <source data-srcset="img/file.webp" type="image/webp">
+                                <img class="lazy" data-src="img/file.avif" alt="">
+                            </picture>
+                            <button type="button" class="documents-block__delete btn-reset">
+                                <svg>
+                                  <use xlink:href="img/sprite.svg#delete"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="request__form-descr">
+                Нажимая кнопку отправить, вы&nbsp;даете 
+                <a href="#">согласие на&nbsp;обработку персональных данный</a>
+            </div>
+            <button class="request__btn btn-reset">Отправить</button>
+        </form>
+
+        <form action="#" class="request__form login-form login-form--hidden">
+            <div class="request__wrap">
+                <div class="request__form-descr">Имя</div>
+                <input placeholder="Менделеев Дмитрий Иванович" type="text" 
+                class="request__input input-reset">
+            </div>
+            <div class="request__wrap">
+                <div class="request__form-descr">Телефон*</div>
+                <input placeholder="+7" type="tel" class="request__input input-reset">
+            </div>
+            <div class="request__wrap">
+                <div class="request__form-descr">Удобное время и&nbsp;день звонка</div>
+                <input placeholder="Пятница, 12:00 - 17:00" type="text" class="request__input input-reset">
+            </div>
+            <div class="request__form-descr">
+                Нажимая кнопку отправить, вы&nbsp;даете 
+                <a href="#">согласие на&nbsp;обработку персональных данный</a>
+            </div>
+            <button class="request__btn btn-reset">Запросить звонок</button>
+        </form>
+    </div>
+</div>
+    </main>
+  </div>
+</body>
+
+</html>
